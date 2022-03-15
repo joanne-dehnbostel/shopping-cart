@@ -65,12 +65,17 @@ function Cart({ cartitems }) {
   );
 }
 
-const availableItems = [
-  { product: 'Jacket', inStock: 2 },
-  { product: 'Pants', inStock: 3 },
-  { product: 'Scarf', inStock: 0 },
-  { product: 'Pajamas', inStock: 3 },
-  { product: 'Shirt', inStock: 1 },
+//const availableItems = [
+ // { product: 'Jacket', inStock: 2 },
+ // { product: 'Pants', inStock: 3 },
+  //{ product: 'Scarf', inStock: 0 },
+ // { product: 'Pajamas', inStock: 3 },
+  //{ product: 'Shirt', inStock: 1 },
 ];
-
+const availableItems = [
+  { name: "Apples_:", country: "Italy", cost: 3, instock: 10 },
+  { name: "Oranges:", country: "Spain", cost: 4, instock: 3 },
+  { name: "Beans__:", country: "USA", cost: 2, instock: 5 },
+  { name: "Cabbage:", country: "USA", cost: 1, instock: 8 },
+];
 ReactDOM.render(<ShoppingCart availableItems={availableItems} />, document.getElementById('root'));
