@@ -66,7 +66,7 @@ function Cart({ cartitems }) {
 }
 
 const availableItems = [
-  { product: 'Jacket', inStock: 2 },
+  { product: 'Apple', inStock: 2 },
   { product: 'Pants', inStock: 3 },
   { product: 'Scarf', inStock: 0 },
  { product: 'Pajamas', inStock: 3 },
