@@ -66,11 +66,11 @@ function Cart({ cartitems }) {
 }
 
 const availableItems = [
-  { product: 'Jacket', inStock: 2 },
-  { product: 'Skirt', inStock: 3 },
-  { product: 'Scarf', inStock: 10 },
- { product: 'Pajamas', inStock: 3 },
-  { product: 'Shirt', inStock: 1 },
+  { product: 'Apple', inStock: 2 },
+  { product: 'Orange', inStock: 3 },
+  { product: 'Cabbage', inStock: 10 },
+ { product: 'Beans', inStock: 3 },
+  { product: 'Nuts', inStock: 1 },
 ];
 
 ReactDOM.render(<ShoppingCart availableItems={availableItems} />, document.getElementById('root'));
