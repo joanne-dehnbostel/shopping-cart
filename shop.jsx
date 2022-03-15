@@ -72,16 +72,5 @@ const availableItems = [
  { product: 'Pajamas', inStock: 3 },
   { product: 'Shirt', inStock: 1 },
 ];
-//const availableItems = [
-  //{ product:'Apples:',inStock: 10 },
- // { product:'Oranges:', inStock: 3 },
-  //{ product:'Beans:',inStock: 5 },
-  //{ product:'Cabbage:',inStock: 8 },
-//];
-//const availableItems = [
-  //{ product:'Apples:',name: "Apples_:", country: "Italy", cost: 3, inStock: 10 },
-  //{ product:'Oranges:',name: "Oranges:", country: "Spain", cost: 4, inStock: 3 },
-  //{ product:'Beans:',name: "Beans__:", country: "USA", cost: 2, inStock: 5 },
-  //{ product:'Cabbage:',name: "Cabbage:", country: "USA", cost: 1, inStock: 8 },
-//];
+
 ReactDOM.render(<ShoppingCart availableItems={availableItems} />, document.getElementById('root'));
