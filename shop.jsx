@@ -71,7 +71,7 @@ function Cart({ cartitems }) {
   //{ product: 'Scarf', inStock: 0 },
  // { product: 'Pajamas', inStock: 3 },
   //{ product: 'Shirt', inStock: 1 },
-];
+//];
 const availableItems = [
   { name: "Apples_:", country: "Italy", cost: 3, instock: 10 },
   { name: "Oranges:", country: "Spain", cost: 4, instock: 3 },
