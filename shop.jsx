@@ -1,16 +1,16 @@
-// provide a button and use onClick to move 1 item into the Shopping Cart
-// use React.useState to keep track of items in the Cart.
+// provides a button and uses onClick to move 1 item into the Shopping Cart
+// uses React.useState to keep track of items in the Cart.
 // list out the Cart items in another column
 function ShoppingCart({ availableItems }) {
   const { Button } = ReactBootstrap;
 
-  // TODO: create state for stock and cart using React.useState
+  // creates state for stock and cart using React.useState
 const [stock, setStock] = React.useState(availableItems);
   const [cart, setCart] = React.useState([]);
   const moveToCart = (e) => {
-    // TODO: create product and numInStock variables
+    //  creates product and numInStock variables
      let [product, numInStock] = e.target.innerHTML.split(':');
-    // TODO: Determine if numInStock is greater than 0. If not, find the product that was clicked and update its numInStock
+    // Determines whether numInStock is greater than 0. If not, finds the product that was clicked and updates its numInStock
      if (numInStock <= 0) return; // zero items in stock
     let item = stock.filter((item) => item.product == product);
     let newStock = stock.map((item) => {
@@ -19,7 +19,7 @@ const [stock, setStock] = React.useState(availableItems);
       }
       return item;
     });
-    // TODO: Update the stock state to include the new stock
+    // Updates the stock state to include the new stock
     setStock([...newStock]);
     // TODO: Update the cart state to include the updated item
     setCart([...cart, ...item]); // for now don't worry about repeat items in Cart
@@ -27,7 +27,7 @@ const [stock, setStock] = React.useState(availableItems);
   };
   
 
-  // No need to update code beyond this point
+  //  don't update beyond this point
   const availableItemsButtons = availableItems.map((item, index) => {
     return (
       <Button id={item.product} key={index} onClick={moveToCart}>
