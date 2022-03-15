@@ -65,12 +65,12 @@ function Cart({ cartitems }) {
   );
 }
 
-const availableItems = [
+//const availableItems = [
   //{ product: 'Apple', inStock: 2 },
   //{ product: 'Orange', inStock: 3 },
-  { product: 'Scarf', inStock: 0 },
- { product: 'Pajamas', inStock: 3 },
-  { product: 'Shirt', inStock: 1 },
-];
+  //{ product: 'Scarf', inStock: 0 },
+ //{ product: 'Pajamas', inStock: 3 },
+  //{ product: 'Shirt', inStock: 1 },
+//];
 
 ReactDOM.render(<ShoppingCart availableItems={availableItems} />, document.getElementById('root'));
